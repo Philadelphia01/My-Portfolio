@@ -1,0 +1,16 @@
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+  }
+  
+  .logo a {
+    color: var(--text-light);
+    transition: var(--transition);
+  }
+  
+  .logo a:hover {
+    color: var(--primary);
+  }
+  
+  

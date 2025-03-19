@@ -1,0 +1,101 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/If%20she%20codes%2C%20she%20can%20hack%20you%20as%20well-HcckTS5h8BpMiFxoe5vS1326Bztj17.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    text-align: left;
+    animation: fadeInRight 1s ease;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+  
+  .hero-cta {
+    margin-top: 30px;
+  }
+  
+  .highlight {
+    color: var(--primary);
+    position: relative;
+  }
+  
+  .highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .hero-content {
+      justify-content: center;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  }
+  
+  

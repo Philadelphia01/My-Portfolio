@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="logo">
-          <a href="#home">PL</a>
+          <a href="#home">Philadelphia</a>
         </div>
 
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>

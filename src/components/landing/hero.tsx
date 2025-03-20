@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            I'm a <span className="highlight">Full Stack</span> Software Developer.
+            I'm a <span className="highlight">Full Stack</span> Developer.
           </h1>
           <p className="hero-subtitle">
-            Final year IT student at Rosebank College with 6 months experience as a Junior Full Stack Developer at
+            Final year IT student with 6 months experience as a Junior Full Stack Developer at
             Shaper in Johannesburg.
           </p>
           <div className="hero-cta">

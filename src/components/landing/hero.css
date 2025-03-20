@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/If%20she%20codes%2C%20she%20can%20hack%20you%20as%20well-HcckTS5h8BpMiFxoe5vS1326Bztj17.jpeg");
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
   
@@ -55,8 +55,9 @@
   }
   
   .highlight {
-    color: var(--primary);
+    color: var(--text-light);
     position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .highlight::after {
@@ -97,5 +98,3 @@
       font-size: 2rem;
     }
   }
-  
-  

@@ -1,4 +1,4 @@
-import "../styles/Logo.css"
+import "./logo.css"
 
 const Logo = () => {
   return (
@@ -9,4 +9,3 @@ const Logo = () => {
 }
 
 export default Logo
-

@@ -1,0 +1,277 @@
+.resume-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Contact Card */
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--text-dark);
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+/* Education Card */
+.education-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / -1;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.education-item {
+  border-left: 3px solid var(--primary);
+  padding-left: 20px;
+}
+
+.education-institution {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.education-period {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Languages Card */
+.languages-card {
+  background: #2c3e50;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.languages-card .section-title {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.languages-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.language-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.language-level {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Software Card */
+.software-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / -1;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.software-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.software-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.software-name {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  text-transform: capitalize;
+}
+
+.software-progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Skills Grid */
+.skills-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.core-skills-card,
+.soft-skills-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  border-bottom: 1px solid #f1f3f4;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills-list li:before {
+  content: "•";
+  color: var(--primary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .education-card,
+  .software-card,
+  .skills-grid {
+    grid-column: 1;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 0 1rem;
+  }
+  
+  .contact-card,
+  .education-card,
+  .languages-card,
+  .software-card,
+  .core-skills-card,
+  .soft-skills-card {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .software-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .resume-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .education-institution {
+    font-size: 1rem;
+  }
+}
